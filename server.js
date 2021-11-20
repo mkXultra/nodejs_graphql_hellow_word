@@ -20,7 +20,13 @@ var root = {
     return 'Hello world!';
   },
   hello2: (arg) => {
-  console.log("arg", arg)
+    if(arg && arg.name == 'aiueo'){
+        name = arg.name
+        message = arg.name + 'message'
+      return {
+        name,message
+      }
+    }
     return {
       'name': 'this is name',
       'message': 'this is message',
